@@ -176,14 +176,27 @@ footer .logo{margin-bottom:10px}
 </footer>
 
 <script>
-let ingles=false;
-function cambiarIdioma(){
- ingles=!ingles;
- document.documentElement.lang=ingles?'en':'es';
- document.getElementById('idioma').textContent=ingles?'ESPAÑOL':'ENGLISH';
- document.querySelectorAll('[data-es]').forEach(el=>{
-  el.textContent=ingles?el.getAttribute('data-en'):el.getAttribute('data-es');
- });
+let ingles = false;
+
+function cambiarIdioma() {
+    ingles = !ingles;
+    document.documentElement.lang = ingles ? 'en' : 'es';
+
+    const boton = document.getElementById('idioma');
+
+    if (boton) {
+        boton.textContent = ingles ? 'ESPAÑOL' : 'ENGLISH';
+    }
+
+    document.querySelectorAll('[data-es]').forEach(el => {
+        const texto = ingles
+            ? el.getAttribute('data-en')
+            : el.getAttribute('data-es');
+
+        if (texto !== null) {
+            el.textContent = texto;
+        }
+    });
 }
 </script>
 </body>

@@ -1,0 +1,18 @@
+{
+  "name": "gastrocoin-testnet-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GASTROCOIN ERC-20 testnet prototype",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network polygon"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "5.6.1",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.17",
+    "solc": "^0.8.24"
+  }
+}

@@ -89,6 +89,180 @@ footer .logo{margin-bottom:10px}
  section{padding:55px 6%}
  h2{font-size:26px}
 }
+
+/* GASTROCOIN PREMIUM */
+body {
+  background: #080808;
+  color: #f5f0e5;
+}
+header {
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #8d6b2c;
+}
+.logo, footer .logo {
+  color: #e8c56b;
+  letter-spacing: 3px;
+}
+.premium-hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 95px 20px 110px;
+  background:
+    radial-gradient(ellipse at 50% 35%, #483515 0%, #17120b 38%, #080808 76%);
+}
+.premium-hero h1 {
+  color: #f1d58b;
+  text-shadow: 0 0 28px #c99b3b55;
+  letter-spacing: 7px;
+}
+.coin-mark {
+  width: 126px;
+  height: 126px;
+  margin: 0 auto 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 76px;
+  font-weight: bold;
+  color: #211605;
+  background: linear-gradient(145deg,#fff0ad,#d6a63f,#805719,#f4d782);
+  border: 5px double #f5dfa0;
+  box-shadow: 0 0 45px #d9b56855, inset 0 0 12px #fff5c0;
+}
+.hero-subtitle {
+  font-size: 19px;
+}
+.hero-founder {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 30px auto;
+}
+.hero-founder strong {
+  color: #f1d58b;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.hero-founder span {
+  color: #d6b66d;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.btn {
+  background: linear-gradient(145deg,#f3d98f,#b17c27);
+  color: #171006;
+  font-weight: 900;
+  border: 1px solid #f5df9c;
+}
+.card {
+  background: linear-gradient(145deg,#1b1710,#0d0c0a);
+  border-color: #725727;
+}
+h2, .metric {
+  color: #e8c56b;
+}
+.founder-profile {
+  display: grid;
+  grid-template-columns: minmax(150px,240px) 1fr;
+  gap: 25px;
+  align-items: center;
+}
+.founder-photo {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
+  border: 2px solid #c69b48;
+  box-shadow: 0 0 25px #c69b4833;
+}
+@media(max-width:600px) {
+  .founder-profile { grid-template-columns: 1fr; }
+  .founder-photo { margin: auto; }
+  .premium-hero h1 { letter-spacing: 3px; }
+}
+\n
+/* GASTROCOIN PREMIUM COIN */
+.gc-coin-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 12px;
+  overflow: hidden;
+}
+.gc-coin {
+  width: min(270px, 72vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 12px;
+  background: linear-gradient(135deg,#fff1ae,#c18b32,#ffe9a0,#805017,#f5d77f);
+  box-shadow: 0 0 25px #d5a43c55,
+              inset 0 0 12px #fff5c8,
+              0 15px 30px #0009;
+  position: relative;
+}
+.gc-coin::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  border: 3px dashed #80551b;
+  pointer-events: none;
+}
+.gc-coin-inner {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #ffe8a0;
+  background: radial-gradient(circle at 35% 25%,
+    #ffe9a3 0%,#d8a747 35%,#95621d 75%,#5d3911 100%);
+  box-shadow: inset 0 0 20px #633b12,
+              inset 0 0 5px #fff0ad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #4b2d0a;
+  text-shadow: 0 1px 1px #fff2b5;
+}
+.gc-coin-name {
+  font-size: clamp(19px,6vw,27px);
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+.gc-coin-symbol {
+  font-size: 76px;
+  line-height: 1.1;
+  font-weight: 1000;
+  text-shadow: 2px 3px 2px #fff0a0;
+}
+.gc-coin-star {
+  font-size: 19px;
+  margin: 4px;
+}
+.gc-coin-sub {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.gc-coin-caption {
+  color: #e8c56b;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+@media(max-width:480px) {
+  .gc-coin { width: 235px; }
+  .gc-coin-symbol { font-size: 65px; }
+}
+
 </style>
 </head>
 <body>
@@ -104,31 +278,63 @@ footer .logo{margin-bottom:10px}
 </header>
 
 <main>
-<div class="hero">
- <div class="emblem">GASTRO</div>
- <div class="eyebrow" data-es="UN PROYECTO CON IDENTIDAD ESPAÑOLA" data-en="A PROJECT WITH SPANISH IDENTITY">UN PROYECTO CON IDENTIDAD ESPAÑOLA</div>
- <h1>GASTROCOIN</h1>
- <p data-es="Gastronomía, innovación y tecnología blockchain con una visión abierta al mundo." data-en="Gastronomy, innovation and blockchain technology with a global vision.">Gastronomía, innovación y tecnología blockchain con una visión abierta al mundo.</p>
- <a class="btn" href="#vision" data-es="DESCUBRIR EL PROYECTO" data-en="DISCOVER THE PROJECT">DESCUBRIR EL PROYECTO</a>
+<div class="hero premium-hero">
+  <div class="coin-mark">G</div>
+  <div class="eyebrow">BLOCKCHAIN · GASTRONOMY · INNOVATION</div>
+  <h1>GASTROCOIN</h1>
+  <p class="hero-subtitle">Innovación gastronómica con visión internacional.</p>
+  <div class="hero-founder">
+    <strong>CHEF RICARDO RODRÍGUEZ</strong>
+    <span>FUNDADOR Y DIRECTOR GENERAL</span>
+  </div>
+  <a class="btn" href="#vision">DESCUBRIR EL PROYECTO</a>
 </div>
-
-<section id="vision">
+ <section id="vision">
  <div class="eyebrow" data-es="NUESTRA IDENTIDAD" data-en="OUR IDENTITY">NUESTRA IDENTIDAD</div>
  <h2 data-es="Una visión que une gastronomía y tecnología" data-en="A vision connecting gastronomy and technology">Una visión que une gastronomía y tecnología</h2>
  <p class="lead" data-es="GASTROCOIN es un proyecto tecnológico experimental que explora nuevas posibilidades de conexión entre la cultura gastronómica, la innovación digital y la tecnología blockchain. Su identidad está inspirada en la riqueza de la gastronomía española y en una visión internacional." data-en="GASTROCOIN is an experimental technology project exploring new connections between food culture, digital innovation and blockchain technology. Its identity is inspired by the richness of Spanish gastronomy and an international vision.">GASTROCOIN es un proyecto tecnológico experimental que explora nuevas posibilidades de conexión entre la cultura gastronómica, la innovación digital y la tecnología blockchain. Su identidad está inspirada en la riqueza de la gastronomía española y en una visión internacional.</p>
+ <section id="token">
+ <div class="eyebrow" data-es="FICHA TÉCNICA" data-en="TECHNICAL OVERVIEW">FICHA TÉCNICA</div>
+ <h2 data-es="Información del token" data-en="Token information">Información del token</h2>
+<div class="gc-coin-stage" role="img" aria-label="Moneda GASTROCOIN dorada">
+  <div class="gc-coin">
+    <div class="gc-coin-inner">
+      <span class="gc-coin-star">✦</span>
+      <span class="gc-coin-name">GASTRO</span>
+      <span class="gc-coin-symbol">G</span>
+      <span class="gc-coin-sub">GASTRONOMY · BLOCKCHAIN</span>
+      <span class="gc-coin-star">✦</span>
+    </div>
+  </div>
+  <p class="gc-coin-caption"
+     data-es="GASTRONOMÍA · INNOVACIÓN · TECNOLOGÍA"
+     data-en="GASTRONOMY · INNOVATION · TECHNOLOGY">
+     GASTRONOMÍA · INNOVACIÓN · TECNOLOGÍA
+  </p>
+</div>
+
  <div class="grid">
-  <div class="card"><h3 data-es="Identidad" data-en="Identity">Identidad</h3><p data-es="Inspiración en la cultura gastronómica española." data-en="Inspired by Spanish food culture.">Inspiración en la cultura gastronómica española.</p></div>
-  <div class="card"><h3 data-es="Innovación" data-en="Innovation">Innovación</h3><p data-es="Exploración de herramientas y posibilidades blockchain." data-en="Exploring blockchain tools and possibilities.">Exploración de herramientas y posibilidades blockchain.</p></div>
-  <div class="card"><h3 data-es="Visión global" data-en="Global vision">Visión global</h3><p data-es="Una iniciativa en desarrollo con vocación internacional." data-en="A developing initiative with an international outlook.">Una iniciativa en desarrollo con vocación internacional.</p></div>
+  <div class="card"><div class="metric">GASTROCOIN</div><div class="label" data-es="Nombre" data-en="Name">Nombre</div></div>
+  <div class="card"><div class="metric">GASTRO</div><div class="label" data-es="Símbolo" data-en="Symbol">Símbolo</div></div>
+  <div class="card"><div class="metric">1.000 M</div><div class="label" data-es="Suministro máximo fijo" data-en="Fixed maximum supply">Suministro máximo fijo</div></div>
+  <div class="card"><div class="metric">18</div><div class="label" data-es="Decimales" data-en="Decimals">Decimales</div></div>
+ </div>
+con vocación internacional.</p></div>
  </div>
 </section>
 
 <section id="fundador">
- <div class="eyebrow" data-es="LIDERAZGO DEL PROYECTO" data-en="PROJECT LEADERSHIP">LIDERAZGO DEL PROYECTO</div>
- <h2 data-es="El fundador" data-en="The founder">El fundador</h2>
- <div class="card founder">
-  <h3 style="font-size:25px">Ricardo Rodríguez</h3>
-  <p data-es="Fundador de GASTROCOIN. Profesional de la cocina y creador de esta iniciativa que busca explorar el encuentro entre gastronomía, emprendimiento y tecnología." data-en="Founder of GASTROCOIN. Culinary professional and creator of this initiative exploring the intersection of gastronomy, entrepreneurship and technology.">Fundador de GASTROCOIN. Profesional de la cocina y creador de esta iniciativa que busca explorar el encuentro entre gastronomía, emprendimiento y tecnología.</p>
+ <div class="eyebrow">LIDERAZGO DEL PROYECTO</div>
+ <h2>El fundador</h2>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;align-items:center;max-width:850px;margin:30px auto">
+  <img src="assets/chef-ricardo.jpg?v=3"
+       alt="Chef Ricardo Rodríguez, fundador de GASTROCOIN"
+       style="width:100%;max-width:320px;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:18px;border:3px solid #d9b568;box-shadow:0 8px 30px rgba(217,181,104,.22);margin:auto">
+  <div class="card founder">
+   <h3>Ricardo Rodríguez</h3>
+   <strong>Fundador y Director General</strong>
+   <p>Profesional de la cocina y creador de GASTROCOIN, una iniciativa que explora el encuentro entre gastronomía, emprendimiento y tecnología.</p>
+  </div>
  </div>
 </section>
 

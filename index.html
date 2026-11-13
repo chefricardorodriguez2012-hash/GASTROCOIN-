@@ -4,129 +4,150 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#090909">
-<meta name="description" content="GASTROCOIN: proyecto experimental que conecta gastronomía, innovación digital y tecnología blockchain. Fundador y director general: Chef Ricardo Rodríguez.">
-<title>GASTROCOIN | Gastronomía y blockchain</title>
+<meta name="description" content="GASTROCOIN: proyecto experimental que explora la conexión entre gastronomía, emprendimiento e innovación blockchain. Fundado por el Chef Ricardo Rodríguez.">
+<meta property="og:title" content="GASTROCOIN | Gastronomía e innovación blockchain">
+<meta property="og:description" content="Una visión nacida en la cocina para explorar nuevas posibilidades entre gastronomía y tecnología.">
+<meta property="og:type" content="website">
+<title>GASTROCOIN | Gastronomía e innovación blockchain</title>
 <style>
 :root{color-scheme:dark;--bg:#090909;--panel:#17130d;--gold:#e8c56b;--light:#f7e7b2;--muted:#c2bba9;--line:#70572a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f6f1e7;font:16px/1.7 Arial,Helvetica,sans-serif}
-a{color:var(--light)}header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:15px max(5%,calc((100% - 1100px)/2));background:#090909f2;border-bottom:1px solid var(--line)}
-.logo{font-weight:900;letter-spacing:3px;color:var(--gold);font-size:22px}nav{display:flex;gap:20px;align-items:center}nav a{text-decoration:none;font-size:14px}
-button,.btn{display:inline-block;border:1px solid var(--gold);border-radius:6px;padding:11px 17px;background:linear-gradient(135deg,#f2d98e,#b17c27);color:#171006;font-weight:800;text-decoration:none;cursor:pointer}
-.hero{text-align:center;padding:85px 20px 95px;background:radial-gradient(ellipse at 50% 35%,#493716 0%,#1b150b 40%,#090909 78%)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:#f6f1e7;font:16px/1.7 Arial,Helvetica,sans-serif}a{color:var(--light)}a:focus-visible,button:focus-visible{outline:3px solid #fff0ad;outline-offset:3px}
+header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:13px max(5%,calc((100% - 1100px)/2));background:#090909f5;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.logo{font-weight:900;letter-spacing:3px;color:var(--gold);font-size:22px;text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:18px;align-items:center}nav a{text-decoration:none;font-size:14px}nav a:hover{color:#fff}
+button,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--gold);border-radius:7px;padding:11px 17px;background:linear-gradient(135deg,#f2d98e,#b17c27);color:#171006;font-weight:800;text-decoration:none;cursor:pointer;font:inherit;font-size:14px}
+.btn.secondary,button.secondary{background:transparent;color:var(--light)}.menu-toggle{display:none;background:transparent;color:var(--light);padding:9px 12px}
+.hero{text-align:center;padding:82px 20px 92px;background:radial-gradient(ellipse at 50% 35%,#493716 0%,#1b150b 40%,#090909 78%)}
 .coin{width:126px;height:126px;margin:0 auto 25px;border-radius:50%;display:grid;place-items:center;border:5px double #fff0ad;background:linear-gradient(135deg,#fff0ad,#c18b32,#805719,#f4d782);color:#241806;font:bold 72px Georgia;box-shadow:0 0 42px #d9b56855}
-.eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:800}h1{margin:12px 0;color:var(--light);font-size:clamp(38px,8vw,70px);letter-spacing:5px;line-height:1.1}h2{color:var(--light);font-size:30px;line-height:1.2}h3{color:var(--gold);margin-top:0}.hero p{max-width:720px;margin:20px auto;color:#ddd4c2;font-size:18px}.founder-line{margin:28px 0 22px}.founder-line strong{display:block;color:var(--light);font-size:19px;letter-spacing:1px}.founder-line span{color:var(--gold);font-size:12px;letter-spacing:2px}
-main{max-width:1050px;margin:auto}section{padding:65px 6%}.lead{max-width:850px;color:#ddd4c2;font-size:17px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}.card{background:linear-gradient(145deg,#201a10,#100e0a);border:1px solid var(--line);border-radius:12px;padding:22px}.metric{font-size:clamp(17px,3vw,23px);font-weight:800;color:var(--gold);overflow-wrap:anywhere}.label{font-size:13px;color:var(--muted)}.address{padding:16px;background:#050505;border:1px solid var(--line);border-radius:7px;overflow-wrap:anywhere;color:var(--light);font:14px/1.6 monospace}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.secondary{background:transparent;color:var(--light)}.notice{padding:20px;border:1px solid #80652d;border-radius:9px;background:#211c13;color:#e5dcc9}.profile{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:25px;align-items:center}.profile img{width:100%;max-width:240px;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:12px;border:2px solid var(--gold)}footer{text-align:center;padding:35px 15px;border-top:1px solid var(--line);color:var(--muted)}footer .logo{margin-bottom:8px}.small{font-size:12px;color:#999181}
-@media(max-width:650px){header{padding:13px 5%}nav{gap:10px}nav a{display:none}.hero{padding:70px 18px}section{padding:48px 6%}h2{font-size:26px}.profile{grid-template-columns:1fr}.profile img{margin:auto}}
+.eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:800}h1{margin:12px 0;color:var(--light);font-size:clamp(38px,8vw,70px);letter-spacing:5px;line-height:1.1}h2{color:var(--light);font-size:clamp(25px,4vw,34px);line-height:1.2}h3{color:var(--gold);margin-top:0}.hero p{max-width:740px;margin:20px auto;color:#ddd4c2;font-size:clamp(17px,2.5vw,20px)}.founder-line{margin:28px 0 22px}.founder-line strong{display:block;color:var(--light);font-size:19px;letter-spacing:1px}.founder-line span{color:var(--gold);font-size:12px;letter-spacing:2px}
+main{max-width:1050px;margin:auto}section{padding:62px 6%}.lead{max-width:850px;color:#ddd4c2;font-size:17px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}.card{background:linear-gradient(145deg,#201a10,#100e0a);border:1px solid var(--line);border-radius:12px;padding:22px}.metric{font-size:clamp(17px,3vw,23px);font-weight:800;color:var(--gold);overflow-wrap:anywhere}.label{font-size:13px;color:var(--muted)}.address{padding:16px;background:#050505;border:1px solid var(--line);border-radius:7px;overflow-wrap:anywhere;color:var(--light);font:14px/1.6 monospace}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.notice{padding:20px;border:1px solid #80652d;border-radius:9px;background:#211c13;color:#e5dcc9}.profile{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}.profile-copy{max-width:760px}.link-list{display:flex;gap:12px;flex-wrap:wrap}.link-list a{overflow-wrap:anywhere}.tag{display:inline-block;padding:4px 9px;border:1px solid var(--line);border-radius:30px;color:var(--light);font-size:12px}footer{text-align:center;padding:35px 15px;border-top:1px solid var(--line);color:var(--muted)}footer .logo{margin-bottom:8px}.small{font-size:12px;color:#999181}
+@media(max-width:720px){header{padding:12px 5%}.menu-toggle{display:inline-flex}nav{display:none;position:absolute;top:100%;left:0;right:0;padding:12px 5% 18px;background:#090909;border-bottom:1px solid var(--line);align-items:stretch;flex-direction:column;gap:0}nav.open{display:flex}nav a{display:block;padding:10px 2px;border-bottom:1px solid #332817}nav button{align-self:flex-start;margin-top:10px}.hero{padding:65px 18px 74px}section{padding:46px 6%}.actions .btn{width:100%}.address{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">GASTROCOIN</div>
-  <nav aria-label="Navegación principal">
-    <a href="#vision">Visión</a><a href="#token">Token</a><a href="#fundador">Fundador</a>
-    <button type="button" id="idioma" onclick="cambiarIdioma()">ENGLISH</button>
+  <a class="logo" href="#inicio" aria-label="GASTROCOIN, inicio">GASTROCOIN</a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">☰ MENÚ</button>
+  <nav id="mainNav" aria-label="Navegación principal">
+    <a href="#vision">Nuestra visión</a><a href="#token">Token</a><a href="#contrato">Contrato</a><a href="#documentacion">Documentación</a><a href="#fundador">Fundador</a>
+    <button type="button" id="idioma" class="secondary" onclick="cambiarIdioma()">ENGLISH</button>
   </nav>
 </header>
 <main>
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="coin" aria-hidden="true">G</div>
-    <div class="eyebrow">BLOCKCHAIN · GASTRONOMÍA · INNOVACIÓN</div>
+    <div class="eyebrow">GASTRONOMÍA · BLOCKCHAIN · INNOVACIÓN</div>
     <h1>GASTROCOIN</h1>
-    <p>Innovación gastronómica con visión internacional.</p>
+    <p>Una visión que nace en la cocina y explora nuevas posibilidades para el futuro de la gastronomía.</p>
     <div class="founder-line"><strong>CHEF RICARDO RODRÍGUEZ</strong><span>FUNDADOR Y DIRECTOR GENERAL</span></div>
     <a class="btn" href="#vision">CONOCER EL PROYECTO</a>
   </section>
 
   <section id="vision">
-    <div class="eyebrow">NUESTRA IDENTIDAD</div>
+    <div class="eyebrow">NUESTRA HISTORIA Y PROPÓSITO</div>
     <h2>Una visión que une gastronomía y tecnología</h2>
-    <p class="lead">GASTROCOIN es un proyecto tecnológico experimental que explora nuevas posibilidades de conexión entre la cultura gastronómica, la innovación digital y la tecnología blockchain. Su identidad se inspira en la riqueza de la gastronomía y en una visión internacional.</p>
+    <p class="lead">GASTROCOIN nace de la experiencia y la pasión por la gastronomía del chef Ricardo Rodríguez. Después de años en el mundo de la cocina, surge una pregunta: ¿cómo puede este sector aprovechar las posibilidades de la innovación digital?</p>
+    <p class="lead">La iniciativa explora el encuentro entre cultura gastronómica, restaurantes, emprendimiento y tecnología blockchain. Su propósito es investigar y desarrollar, paso a paso, nuevas formas de conexión y colaboración para un sector con presencia en todo el mundo.</p>
+    <p class="lead">La visión a largo plazo es construir un ecosistema en el que la gastronomía y las herramientas digitales puedan complementarse. Esta es una meta en desarrollo, no una promesa de servicios o beneficios que ya estén disponibles.</p>
   </section>
 
   <section id="token">
-    <div class="eyebrow">FICHA TÉCNICA</div>
-    <h2>Información del token</h2>
+    <div class="eyebrow">INFORMACIÓN TÉCNICA</div>
+    <h2>Ficha del token</h2>
     <div class="grid">
-      <article class="card"><div class="metric">GASTROCOIN</div><div class="label">Nombre</div></article>
-      <article class="card"><div class="metric">GASTROCOIN</div><div class="label">Símbolo</div></article>
-      <article class="card"><div class="metric">1.000.000.000</div><div class="label">Suministro máximo</div></article>
+      <article class="card"><div class="metric">GASTROCOIN</div><div class="label">Nombre del token</div></article>
+      <article class="card"><div class="metric">GASTRO</div><div class="label">Símbolo ERC-20</div></article>
+      <article class="card"><div class="metric">1.000.000.000</div><div class="label">Suministro máximo definido en el contrato</div></article>
       <article class="card"><div class="metric">18</div><div class="label">Decimales</div></article>
+    </div>
+  </section>
+
+  <section id="contrato">
+    <div class="eyebrow">INFORMACIÓN EN CADENA</div>
+    <h2>Red y contrato inteligente</h2>
+    <div class="card">
+      <p><strong>Red actual:</strong> Polygon Amoy (Testnet)</p>
+      <p><strong>Chain ID:</strong> 80002</p>
+      <p><strong>Estándar:</strong> ERC-20</p>
+      <p><strong>Dirección oficial del contrato de prueba:</strong></p>
+      <div class="address" id="contractAddress">0xf876969b2cA284b7185e656A62b03ad27fDd235a</div>
+      <div class="actions">
+        <button type="button" onclick="copiarContrato()">COPIAR DIRECCIÓN</button>
+        <a class="btn secondary" target="_blank" rel="noopener noreferrer" href="https://amoy.polygonscan.com/address/0xf876969b2cA284b7185e656A62b03ad27fDd235a">VER EN POLYGONSCAN</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="documentacion">
+    <div class="eyebrow">FUENTES Y TRANSPARENCIA</div>
+    <h2>Documentación y enlaces oficiales</h2>
+    <p class="lead">Consulta el repositorio público para revisar el código fuente, la descripción técnica y las instrucciones del prototipo.</p>
+    <div class="card">
+      <div class="link-list">
+        <a class="btn" target="_blank" rel="noopener noreferrer" href="https://github.com/chefricardorodriguez2012-hash/GASTROCOIN-/blob/main/README.md">LEER DOCUMENTACIÓN TÉCNICA</a>
+        <a class="btn secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/chefricardorodriguez2012-hash/GASTROCOIN-/blob/main/contracts/GastroCoin.sol">CONSULTAR CÓDIGO DEL CONTRATO</a>
+        <a class="btn secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/chefricardorodriguez2012-hash/GASTROCOIN-">REPOSITORIO GITHUB</a>
+        <a class="btn secondary" target="_blank" rel="noopener noreferrer" href="https://x.com/Gastrocoin12">GASTROCOIN EN X</a>
+      </div>
     </div>
   </section>
 
   <section id="fundador">
     <div class="eyebrow">LIDERAZGO DEL PROYECTO</div>
-    <h2>Fundador y director general</h2>
+    <h2>La historia detrás de GASTROCOIN</h2>
     <div class="profile">
-      <img src="assets/chef-ricardo.jpg?v=3" alt="Chef Ricardo Rodríguez, fundador de GASTROCOIN" onerror="this.style.display='none'">
-      <div class="card">
+      <div class="card profile-copy">
         <h3>Chef Ricardo Rodríguez</h3>
         <strong>Fundador y Director General de GASTROCOIN</strong>
-        <p>Profesional de la cocina y creador de GASTROCOIN, una iniciativa que explora el encuentro entre gastronomía, emprendimiento y tecnología.</p>
+        <p>Profesional de la cocina y creador de esta iniciativa. Su experiencia gastronómica inspira la visión de explorar nuevas conexiones entre gastronomía, emprendimiento y tecnología.</p>
       </div>
     </div>
   </section>
 
-  <section id="contrato">
-    <div class="eyebrow">BLOCKCHAIN</div>
-    <h2>Red y contrato inteligente</h2>
-    <div class="card">
-      <p><strong>Red:</strong> Polygon Amoy (Testnet)</p>
-      <p><strong>Chain ID:</strong> 80002</p>
-      <p><strong>Estándar:</strong> ERC-20</p>
-      <p><strong>Dirección oficial del contrato:</strong></p>
-      <div class="address">0xf876969b2cA284b7185e656A62b03ad27fDd235a</div>
-      <div class="actions">
-        <a class="btn" target="_blank" rel="noopener noreferrer" href="https://amoy.polygonscan.com/address/0xf876969b2cA284b7185e656A62b03ad27fDd235a">VER CONTRATO EN POLYGONSCAN</a>
-        <a class="btn secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/chefricardorodriguez2012-hash/GASTROCOIN-">VER PROYECTO EN GITHUB</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="eyebrow">TRANSPARENCIA</div>
-    <h2>Estado actual del proyecto</h2>
+  <section id="estado">
+    <div class="eyebrow">ESTADO Y AVISOS IMPORTANTES</div>
+    <h2>Transparencia del proyecto</h2>
     <div class="notice">
-      <p>GASTROCOIN se encuentra actualmente desplegado en Polygon Amoy Testnet, una red de pruebas. Este contrato no está desplegado en Polygon PoS Mainnet y los tokens de prueba no representan por sí mismos valor comercial. No se afirma que el contrato haya sido auditado independientemente. Este sitio tiene fines informativos y no constituye una oferta de inversión, recomendación financiera ni promesa de rentabilidad.</p>
+      <p><strong>Estado actual:</strong> el contrato identificado en esta página está desplegado en Polygon Amoy, una red de pruebas. No está desplegado en Polygon PoS Mainnet. El token de prueba no representa por sí mismo valor comercial ni disponibilidad para compraventa.</p>
+      <p>El prototipo no ha sido presentado como auditado independientemente. La utilidad del ecosistema descrita aquí corresponde a una visión en desarrollo y no a servicios actualmente garantizados.</p>
+      <p>Este sitio tiene fines informativos y no constituye una oferta de inversión, recomendación financiera ni promesa de rentabilidad. Toda inversión en criptoactivos implica riesgos.</p>
     </div>
   </section>
 </main>
 <footer>
   <div class="logo">GASTROCOIN</div>
   <p>Innovación gastronómica con visión internacional.</p>
+  <p><a href="https://x.com/Gastrocoin12" target="_blank" rel="noopener noreferrer">Cuenta oficial de GASTROCOIN en X</a></p>
   <p class="small">© 2026 GASTROCOIN · Proyecto experimental</p>
   <p class="small">Fundador y Director General: Chef Ricardo Rodríguez</p>
 </footer>
 <script>
-let ingles = false;
-function cambiarIdioma() {
-  ingles = !ingles;
-  document.documentElement.lang = ingles ? "en" : "es";
-  document.getElementById("idioma").textContent = ingles ? "ESPAÑOL" : "ENGLISH";
-  const traducciones = {
-    "Visión":"Vision","Token":"Token","Fundador":"Founder",
-    "NUESTRA IDENTIDAD":"OUR IDENTITY",
+const menuToggle=document.getElementById("menuToggle");
+const mainNav=document.getElementById("mainNav");
+menuToggle.addEventListener("click",()=>{const open=mainNav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open));menuToggle.setAttribute("aria-label",open?"Cerrar menú":"Abrir menú")});
+mainNav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{mainNav.classList.remove("open");menuToggle.setAttribute("aria-expanded","false")}));
+function copiarContrato(){const address=document.getElementById("contractAddress").textContent.trim();if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(address).then(()=>alert("Dirección copiada")).catch(()=>alert(address))}else{alert(address)}}
+let ingles=false;
+function cambiarIdioma(){
+  ingles=!ingles;
+  document.documentElement.lang=ingles?"en":"es";
+  document.getElementById("idioma").textContent=ingles?"ESPAÑOL":"ENGLISH";
+  const map={
+    "Nuestra visión":"Our vision","Token":"Token","Contrato":"Contract","Documentación":"Documentation","Fundador":"Founder",
+    "NUESTRA HISTORIA Y PROPÓSITO":"OUR STORY AND PURPOSE",
     "Una visión que une gastronomía y tecnología":"A vision connecting gastronomy and technology",
-    "GASTROCOIN es un proyecto tecnológico experimental que explora nuevas posibilidades de conexión entre la cultura gastronómica, la innovación digital y la tecnología blockchain. Su identidad se inspira en la riqueza de la gastronomía y en una visión internacional.":"GASTROCOIN is an experimental technology project exploring new connections between food culture, digital innovation and blockchain technology. Its identity is inspired by gastronomy and an international vision.",
-    "FICHA TÉCNICA":"TECHNICAL OVERVIEW","Información del token":"Token information",
-    "Nombre":"Name","Símbolo":"Symbol","Suministro máximo":"Maximum supply","Decimales":"Decimals",
-    "LIDERAZGO DEL PROYECTO":"PROJECT LEADERSHIP","Fundador y director general":"Founder and CEO",
-    "Profesional de la cocina y creador de GASTROCOIN, una iniciativa que explora el encuentro entre gastronomía, emprendimiento y tecnología.":"Culinary professional and creator of GASTROCOIN, an initiative exploring the intersection of gastronomy, entrepreneurship and technology.",
-    "BLOCKCHAIN":"BLOCKCHAIN","Red y contrato inteligente":"Network and smart contract",
-    "Red:":"Network:","Estándar:":"Standard:","Dirección oficial del contrato:":"Official contract address:",
-    "VER CONTRATO EN POLYGONSCAN":"VIEW CONTRACT ON POLYGONSCAN","VER PROYECTO EN GITHUB":"VIEW PROJECT ON GITHUB",
-    "TRANSPARENCIA":"TRANSPARENCY","Estado actual del proyecto":"Current project status",
-    "GASTROCOIN se encuentra actualmente desplegado en Polygon Amoy Testnet, una red de pruebas. Este contrato no está desplegado en Polygon PoS Mainnet y los tokens de prueba no representan por sí mismos valor comercial. No se afirma que el contrato haya sido auditado independientemente. Este sitio tiene fines informativos y no constituye una oferta de inversión, recomendación financiera ni promesa de rentabilidad.":"GASTROCOIN is currently deployed on Polygon Amoy Testnet, a test network. This contract is not deployed on Polygon PoS Mainnet, and test tokens do not by themselves represent commercial value. No independent audit is claimed. This website is informational and does not constitute an investment offer, financial advice or a promise of returns.",
-    "Innovación gastronómica con visión internacional.":"Gastronomic innovation with an international vision.",
-    "Proyecto experimental":"Experimental project","Fundador y Director General: Chef Ricardo Rodríguez":"Founder and CEO: Chef Ricardo Rodríguez"
+    "GASTROCOIN nace de la experiencia y la pasión por la gastronomía del chef Ricardo Rodríguez. Después de años en el mundo de la cocina, surge una pregunta: ¿cómo puede este sector aprovechar las posibilidades de la innovación digital?":"GASTROCOIN was born from Chef Ricardo Rodríguez's experience and passion for gastronomy. After years in the culinary world, a question emerged: how can this sector benefit from digital innovation?",
+    "La iniciativa explora el encuentro entre cultura gastronómica, restaurantes, emprendimiento y tecnología blockchain. Su propósito es investigar y desarrollar, paso a paso, nuevas formas de conexión y colaboración para un sector con presencia en todo el mundo.":"The initiative explores the intersection of food culture, restaurants, entrepreneurship and blockchain technology. Its purpose is to research and develop, step by step, new forms of connection and collaboration for a sector with a global presence.",
+    "La visión a largo plazo es construir un ecosistema en el que la gastronomía y las herramientas digitales puedan complementarse. Esta es una meta en desarrollo, no una promesa de servicios o beneficios que ya estén disponibles.":"The long-term vision is to build an ecosystem where gastronomy and digital tools can complement each other. This is a goal under development, not a promise of services or benefits already available.",
+    "INFORMACIÓN TÉCNICA":"TECHNICAL INFORMATION","Ficha del token":"Token overview","Nombre del token":"Token name","Símbolo ERC-20":"ERC-20 symbol","Suministro máximo definido en el contrato":"Maximum supply defined in contract","Decimales":"Decimals",
+    "INFORMACIÓN EN CADENA":"ON-CHAIN INFORMATION","Red y contrato inteligente":"Network and smart contract","Red actual:":"Current network:","Estándar:":"Standard:","Dirección oficial del contrato de prueba:":"Official test contract address:","COPIAR DIRECCIÓN":"COPY ADDRESS","VER EN POLYGONSCAN":"VIEW ON POLYGONSCAN",
+    "FUENTES Y TRANSPARENCIA":"SOURCES AND TRANSPARENCY","Documentación y enlaces oficiales":"Documentation and official links","Consulta el repositorio público para revisar el código fuente, la descripción técnica y las instrucciones del prototipo.":"Visit the public repository to review the source code, technical description and prototype instructions.","LEER DOCUMENTACIÓN TÉCNICA":"READ TECHNICAL DOCUMENTATION","CONSULTAR CÓDIGO DEL CONTRATO":"VIEW CONTRACT SOURCE","REPOSITORIO GITHUB":"GITHUB REPOSITORY","GASTROCOIN EN X":"GASTROCOIN ON X",
+    "LIDERAZGO DEL PROYECTO":"PROJECT LEADERSHIP","La historia detrás de GASTROCOIN":"The story behind GASTROCOIN","Fundador y Director General de GASTROCOIN":"Founder and CEO of GASTROCOIN","Profesional de la cocina y creador de esta iniciativa. Su experiencia gastronómica inspira la visión de explorar nuevas conexiones entre gastronomía, emprendimiento y tecnología.":"Culinary professional and creator of this initiative. His experience in gastronomy inspires the vision of exploring new connections between gastronomy, entrepreneurship and technology.",
+    "ESTADO Y AVISOS IMPORTANTES":"STATUS AND IMPORTANT NOTICES","Transparencia del proyecto":"Project transparency","Estado actual:":"Current status:","el contrato identificado en esta página está desplegado en Polygon Amoy, una red de pruebas. No está desplegado en Polygon PoS Mainnet. El token de prueba no representa por sí mismo valor comercial ni disponibilidad para compraventa.":"the contract identified on this page is deployed on Polygon Amoy, a test network. It is not deployed on Polygon PoS Mainnet. The test token does not by itself represent commercial value or availability for trading.","El prototipo no ha sido presentado como auditado independientemente. La utilidad del ecosistema descrita aquí corresponde a una visión en desarrollo y no a servicios actualmente garantizados.":"The prototype has not been presented as independently audited. The ecosystem utility described here is a vision under development, not a guarantee of currently available services.","Este sitio tiene fines informativos y no constituye una oferta de inversión, recomendación financiera ni promesa de rentabilidad. Toda inversión en criptoactivos implica riesgos.":"This website is for informational purposes only and does not constitute an investment offer, financial recommendation or promise of returns. All crypto-asset investments involve risks.",
+    "Innovación gastronómica con visión internacional.":"Gastronomic innovation with an international vision.","Cuenta oficial de GASTROCOIN en X":"Official GASTROCOIN account on X","Proyecto experimental":"Experimental project","Fundador y Director General: Chef Ricardo Rodríguez":"Founder and CEO: Chef Ricardo Rodríguez","GASTRONOMÍA · BLOCKCHAIN · INNOVACIÓN":"GASTRONOMY · BLOCKCHAIN · INNOVATION","Una visión que nace en la cocina y explora nuevas posibilidades para el futuro de la gastronomía.":"A vision born in the kitchen, exploring new possibilities for the future of gastronomy.","CONOCER EL PROYECTO":"DISCOVER THE PROJECT","CHEF RICARDO RODRÍGUEZ":"CHEF RICARDO RODRÍGUEZ"
   };
-  document.querySelectorAll("body *").forEach(el => {
-    if (el.children.length === 0) {
-      const original = el.dataset.es || el.textContent;
-      if (!el.dataset.es) el.dataset.es = original;
-      el.textContent = ingles ? (traducciones[original] || original) : el.dataset.es;
-    }
-  });
+  document.querySelectorAll("body *").forEach(el=>{if(el.children.length===0){if(!el.dataset.es)el.dataset.es=el.textContent;const original=el.dataset.es;el.textContent=ingles?(map[original]||original):original}});
 }
 </script>
 </body>
